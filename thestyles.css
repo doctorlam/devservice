@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body {font-family: "Roboto", sans-serif !important; margin: 0; padding: 0; overflow-x: hidden;}
+
+span {text-align: center;}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+}
+
+.blue-strong {color: #50748a; font-weight: bold; font-size: 48px;}
+
+h3.orange, h4.orange {
+    color: #f7981c;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+h3 {line-height: 50px;}
+
+.img-slider {
+    width: 200px;
+
+}
+
+.flex-container {
+    display: flex; /* or inline-flex */
+    
+}
+.flex-container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+/* ========= LANDING PAGE SECTIONS ========= */
+
+
+/* ===== //SECTION 1 -- HEADER// ===== */
+
+/* ---- ! NO MORE RECTANGLES ! ---- */
+
+header {
+    background-image: url('images/header.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 900px;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.header-text h4 {
+    line-height: 50px;
+}
+
+
+.home {
+ background-color: #f1f1f1;}
+
+
+
+
+/*===== navbar =====*/
+
+.navigation-bar {
+    width: 624px; 
+    min-height: 80px; 
+    border-radius: 3px; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3); 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.navigation-bar-demo {
+    width: 96px;
+    min-height: 85px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_pearl_p-for-pearl {
+    width: 31px;
+    min-height: 36px;
+    margin-top: 19px;
+    margin-bottom: 22px;
+    margin-left: 30px;
+    object-fit: contain;
+}
+
+.navbar {margin: 0; padding: 0;
+
+}
+.navbar-nav {
+      display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+}
+.active {border-bottom: 2px solid #fff;}
+
+.nav-item {margin-left: 18px;}
+
+.nav-item1 {margin-left: 0 !important;}
+
+.nav-item2 {margin-left: 42px; padding-top: 30px;}
+
+.nav-item a {color: #fff !important;}
+
+
+
+
+/*===== feature box (countdown) =====*/
+
+.feature-box {
+    width: 724px;
+    min-height: 94px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+}
+
+.green {
+    background-color: #39b54a; 
+    color: #ffffff; min-height: 94px; 
+    text-align: center; 
+    font-size: 18px !important; 
+    font-size: 24px !important; 
+    font-weight: bold;
+    width: 347px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3.green-btn {
+    font-size: 24px;
+}
+
+
+
+/* ===== //SECTION 2 -- SLIDER// ===== */
+
+/* ==== Main Slider Container Begin ==== */
+
+.slider-section {
+    height: 600px;
+}
+.slide-content-container {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    height: 88%;
+    width: 100%;
+}
+
+/* ==== Main Navigation Start ==== */
+
+.main-nav {
+    position: relative;
+    top: 75%;
+    left: 5%;
+    height: 20px;
+    width: 500px;
+    display: flex;
+    font-size: 80%;
+    font-weight: 300;
+    flex-direction: row;
+    transform: translateY(100%) rotate(-90deg); 
+    transform-origin: top left; 
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    color: inherit;
+    transition: all 0.1s ease-out;
+    justify-content: center;
+}
+
+.site-nav:hover {
+    border-bottom: 2px solid blue;
+}
+
+/* ==== Main Navigation End ==== */
+
+/* ==== Section Nav Begin ==== */
+
+input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.nav-container label {
+    position: relative;
+    font-size: 100%;
+    top: 0;
+    height: 35px;
+    width: 250px;
+    justify-content: center;
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.1s ease-out;
+    display: flex;
+    flex-direction: row;
+}
+
+#sec-one:hover ~ .nav-container label.first, 
+#sec-two:hover ~ .nav-container label.second, 
+#sec-three:hover ~ .nav-container label.third, 
+#sec-four:hover ~ .nav-container label.fourth,
+#sec-five:hover ~ .nav-container label.fifth {
+    border-bottom: 4px solid #50748a;
+}
+
+#sec-one:checked ~ .nav-container label.first, 
+#sec-two:checked ~ .nav-container label.second, 
+#sec-three:checked ~ .nav-container label.third, 
+#sec-four:checked ~ .nav-container label.fourth,
+#sec-five:checked ~ .nav-container label.fifth {
+    border-bottom: 4px solid #50748a;
+}
+
+
+/* ==== Section Nav End ==== */
+
+/* ==== Slider Begin ==== */
+
+.nav-container {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    left: 2%;
+    top: 5%;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-container h3, .nav-container h4 {
+    line-height: 40px;
+    color: #000;
+    opacity: 0.3;
+
+}
+
+.nav-container h4 {
+    font-weight: 300;
+}
+
+.slider {
+    position: absolute;
+    top: 35%;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.img-slider {
+    width: 300px;
+}
+
+#sec-one:checked ~ div.sec-one-slider, 
+#sec-two:checked ~ div.sec-two-slider, 
+#sec-three:checked ~ div.sec-three-slider, 
+#sec-four:checked ~ div.sec-four-slider,
+#sec-five:checked ~ div.sec-five-slider {
+    left: 20%;
+    opacity: 1;
+}
+
+/* ==== Slider End ==== */
+
+/* ==== Bottom Start ==== */
+
+.next-page-arrow a {
+    position: absolute;
+    left: 50%;
+    color: inherit;
+    font-size: 27px;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite; /* Safari 4.0 - 8.0 */
+}
+
+@keyframes bounce {
+    0% { bottom: 5%; }
+    50% { bottom: 6.7%; }
+    100% { bottom: 5%; }
+}
+
+/* ==== Bottom End ==== */
+
+/* ==== Main Slider Container End ==== */
+
+
+/* ===== //LITTLE BOX FOR "OUR SOLUTIONS and BLOG & NEWS// ===== */
+
+.broken-header {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+     background: #F1F1F1;
+     z-index: 1000 !important;
+     margin-top: -60px;
+     height: 69px;
+    border-radius: 3px 3px 0px 0px;
+    background-color: #f1f1f1;
+        width: 203px;
+        text-align: center;
+        /* center up everything */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+}
+.broken-header h1 {
+      color: #345f75;
+     font-size: 18px;
+     font-weight: 700;
+}
+
+
+
+
+
+
+
+/* ===== //SECTION 3 -- DEMO SIGNUP & NEWSLETTER BANNERS// ===== */
+
+.demo-sign {
+    min-height: 210px;
+    background-color: #415e70;
+} 
+
+.demo-sign-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    min-height: 210px;
+        display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.demo-sign-inner .green {
+    min-height: 210px;
+    padding-top: 0px;
+}
+
+/* styles for the blue banner */
+.demo-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+}
+.demo-text h5 /* top line */ {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.demo-text h1 { /* second line */
+
+ font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 300;
+}
+
+/*--darker sections of demo signup, etc.--*/
+.demo-sign-darker {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+ 
+    min-height: 210px;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+} 
+
+/* ===== //SECTION 4 -- QUOTES SECTION// ===== */
+
+.quotes-section {
+    min-height: 700px;
+    padding:40px 0 40px 0;
+} 
+.quotes-section h1, .quotes-section h2 {
+    text-align: center;
+}
+.quotes-section h1 {
+    font-weight: 700;
+}
+.quotes-section h2 {
+    font-weight: 300;
+}
+.quotes-section-text-intro {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    color: #50748a;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.quotes-section-text-intro-bold {
+    font-weight: bold;
+}
+
+.quotes-section-text-intro-thin {
+    font-weight: 100;
+}
+
+.quote-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-row {
+    margin-top: 70px;
+}
+
+/*--quote boxes--*/
+.quote-boxes {
+    width: 368px;
+    min-height: 310px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-right: 37.5px;
+    margin-left: 37.5px;
+ background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.31)), linear-gradient(#50748a, #50748a);
+} 
+
+.quote-blue-box {
+    position: relative;
+    padding-top: 10px;
+}
+
+.quote-blue-box h5, .quote-blue-box h6 {
+    margin-left: 51%;
+    color: #fff;
+}
+
+.quote-blue-box h4 {
+    font-style: italic;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
+.quote-blue-box h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quote-blue-box h6 {
+    font-size: 12px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: -40px;
+    left: -40px; /* you’ll have to experiment on the positions here */
+}
+
+/*--images for quote boxes--*/
+.quote-image {} 
+
+
+
+/* ===== //SECTION 5 -- PARTNERS LOGOS// ===== */
+
+.partners-title-box {
+    background-color: #2d424e;
+    font-size: 48px;
+    height: 177px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.partners {
+    background-color: #415e70;
+    padding-top: 50px;
+    min-height: 490px;
+    text-align: center;
+}
+
+.partner-logo1 {
+    width: 196px;
+}
+
+.partner-logo2 {
+    width: 269px;
+}
+
+
+/* ===== //SECTION 6 -- DEMO SIGNUP & OUR PARTNERS BANNERS// ===== */
+
+.news-container-main {
+    background: #F1F1F1;
+}
+.news-container-sub {
+    padding-top: 40px;
+
+}
+.section-news-container {
+    max-width: 1068px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+.rectangle-10-title {} /*--recent news, etc., date box--*/
+
+/*--recent news, success stories, career ops sections--*/
+
+.thinner-news-box {
+    margin-bottom: 20px;
+  width: 320px;
+  height: 420px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 3px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.31)), linear-gradient(#50748a, #50748a);
+} 
+
+.thinner-news-box-header {
+    background-color: #384f5d;
+    height: 48px;
+    padding-left: 20px;
+    padding-top: 15px;
+
+}
+
+.thinner-news-box-header h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.thinner-news-box h1, .wider-news-box h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.thinner-news-box .orange, .wider-news-box .orange {
+    color: #f7981c;
+    margin-left: 20px;
+}
+
+.wider-news-box {
+        margin-bottom: 20px;
+
+    width: 496px;
+  height: 275px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 3px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.31)), linear-gradient(#50748a, #50748a);
+}
+
+.rectangle-10-b {
+
+    width: 50%;
+    height: 420px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 3px;
+    background-image: linear-gradient(#50748a, #50748a), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.31));
+
+}
+
+/*--subscribe--*/
+.rectangle-11 {
+    height: 210px;
+    background-color: #1d3642;
+
+}
+
+/*--footer--*/
+.rectangle-12 {
+    min-height: 795px;
+    background-color: #091114;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 80%;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+.contact-box form { /* pushing submit to the right */
+    position: relative;
+}
+.contact-box .submit {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+.pearl-360, .aboutus, .contact-box {
+    width: 320px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.pearl-360, .aboutus, .contact-box h5 {
+    color: #fff;
+}
+
+.input-name, .input-textarea {
+    background-color: #1e2b33;
+    width: 320px;
+    height: 48px;
+    color: #3b5666;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.input-textarea {
+    height: 150px;
+}
+
+.submit {
+    background-color: transparent;
+    color: orange;
+    display:flex;
+    justify-content: end;
+
+}
+
+.right {
+    display:flex;
+    justify-content: end;
+}
+
+
+
+/*-- other header elements --*/
+
+.img-360 {
+  width: 163px;
+  min-height: 163px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.img-360-img {width: 100%;}
+
+.header-text {width: 750px; margin-left: auto; margin-right: auto; font-weight: bolder; line-height: 50px; font-size: 45px; color: #ffffff; text-align: center; margin-top: 70px;}
+
+
+@media screen and (max-width: 599px) {
+    
+    
+}
+
+
+
+
+.webinar-text {font-size: 18px; color: #ffffff; font-weight: 300;}
+
+
+
+
+
+  
