@@ -1,7 +1,35 @@
+/*!
+Theme Name: Pearl 360 New Site
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: pearl-360-new-site
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Pearl 360 New Site is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-body {font-family: "Roboto", sans-serif !important; margin: 0; padding: 0; overflow-x: hidden;}
+body {font-family: "Roboto", sans-serif !important; margin: 0; padding: 0; 
+ display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
+}
+
+#content  {
+    min-height: 100vh;
+    background: #F1F1F1;
+}
 span {text-align: center;}
 
 *, *:before, *:after {
@@ -16,7 +44,12 @@ span {text-align: center;}
     -moz-box-sizing: border-box;    
 }
 
-.blue-strong {color: #50748a; font-weight: bold; font-size: 48px;}
+.blue-strong {color: #50748a; 
+    font-weight: bold; 
+    font-size: 48px;
+    margin-bottom: 30px;
+
+}
 
 h3.orange, h4.orange {
     color: #f7981c;
@@ -51,14 +84,13 @@ h3 {line-height: 50px;}
 
 /* ===== //SECTION 1 -- HEADER// ===== */
 
-/* ---- ! NO MORE RECTANGLES ! ---- */
 
 header {
-    background-image: url('images/header.png');
+    background-image: url('http://pearlsolutions.staging.wpengine.com/wp-content/uploads/2018/06/header.png');
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
-    min-height: 900px;
+    height: 900px;
 }
 
 .header-text h1 {
@@ -73,7 +105,9 @@ header {
 
 
 .home {
- background-color: #f1f1f1;}
+ background-color: #f1f1f1;
+min-height: 100vh;
+}
 
 
 
@@ -100,7 +134,7 @@ header {
     justify-content: center;
 }
 
-.logo_pearl_p-for-pearl {
+.navbar-brand img {
     width: 31px;
     min-height: 36px;
     margin-top: 19px;
@@ -113,20 +147,21 @@ header {
 
 }
 .navbar-nav {
-      display: flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        height: 80px;
 }
 .active {border-bottom: 2px solid #fff;}
 
-.nav-item {margin-left: 18px;}
+.navbar-nav li {margin-left: 18px;}
 
 .nav-item1 {margin-left: 0 !important;}
 
 .nav-item2 {margin-left: 42px; padding-top: 30px;}
 
-.nav-item a {color: #fff !important;}
+.navbar-nav a {color: #fff !important;}
 
 
 
@@ -157,6 +192,9 @@ header {
     justify-content: center;
     align-items: center;
 }
+.green a, .green a:visited {
+    color: white;
+}
 h3.green-btn {
     font-size: 24px;
 }
@@ -170,20 +208,28 @@ h3.green-btn {
 .slider-section {
     height: 600px;
 }
-.slide-content-container {
-    display: flex;
-    justify-content: space-between;
-}
+
 .slider-container {
     position: relative;
-    overflow: hidden;
-    top: 0%;
     display: flex;
     justify-content: center;
-    height: 88%;
+    min-height: 100%;
     width: 100%;
 }
+.slide-content-container {
+     display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
 
+.slider-left-text p {
+    font-size: 24px;
+
+}
+a.orange {
+    color: #f7981c;
+    margin-top: 40px;
+}
 /* ==== Main Navigation Start ==== */
 
 .main-nav {
@@ -230,10 +276,8 @@ input[type="radio"] {
 
 .nav-container label {
     position: relative;
-    font-size: 100%;
     top: 0;
     height: 35px;
-    width: 250px;
     justify-content: center;
     margin-left: 0px; 
     margin-right: 0px;
@@ -244,6 +288,7 @@ input[type="radio"] {
     transition: all 0.1s ease-out;
     display: flex;
     flex-direction: row;
+    color: gray;
 }
 
 #sec-one:hover ~ .nav-container label.first, 
@@ -252,6 +297,7 @@ input[type="radio"] {
 #sec-four:hover ~ .nav-container label.fourth,
 #sec-five:hover ~ .nav-container label.fifth {
     border-bottom: 4px solid #50748a;
+    color: black;
 }
 
 #sec-one:checked ~ .nav-container label.first, 
@@ -260,6 +306,7 @@ input[type="radio"] {
 #sec-four:checked ~ .nav-container label.fourth,
 #sec-five:checked ~ .nav-container label.fifth {
     border-bottom: 4px solid #50748a;
+    color: black;
 }
 
 
@@ -270,14 +317,14 @@ input[type="radio"] {
 .nav-container {
     position: relative;
     height: 20px;
-    width: 100%;
-    left: 2%;
-    top: 5%;
+    width: 80%;
+    top: 60px;
     font-size: 18px;
     font-weight: 700;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-container h3, .nav-container h4 {
@@ -297,6 +344,7 @@ input[type="radio"] {
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease-in;
+
 }
 
 .img-slider {
@@ -308,8 +356,9 @@ input[type="radio"] {
 #sec-three:checked ~ div.sec-three-slider, 
 #sec-four:checked ~ div.sec-four-slider,
 #sec-five:checked ~ div.sec-five-slider {
-    left: 20%;
+    left: 120px;
     opacity: 1;
+   width: 100%;
 }
 
 /* ==== Slider End ==== */
@@ -636,11 +685,37 @@ input[type="radio"] {
 }
 
 /*--footer--*/
-.rectangle-12 {
+footer {
+    margin: auto auto 0 auto;
     min-height: 795px;
     background-color: #091114;
     display: flex;
     align-items: center;
+    width: 100%;
+}
+footer h3 {
+      font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform:uppercase;
+
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    list-style: none;
+    text-transform:uppercase;
+    color: #f7981c;
+}
+footer a {
+    color:#f7981c;
 }
 
 .footer-container {
@@ -720,13 +795,5 @@ input[type="radio"] {
     
 }
 
-
-
-
 .webinar-text {font-size: 18px; color: #ffffff; font-weight: 300;}
 
-
-
-
-
-  
