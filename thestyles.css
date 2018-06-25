@@ -59,7 +59,7 @@ span {text-align: center;}
 }
 
 h3.orange, h4.orange {
-    color: #f7981c;
+    color: #f7981c !important;
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-left: 16px;
@@ -77,6 +77,7 @@ h3 {line-height: 50px;}
     display: flex; /* or inline-flex */
     
 }
+
 .flex-container-centered {
     display: flex;
     justify-content: center;
@@ -114,6 +115,27 @@ header {
  background-color: #f1f1f1;
 min-height: 100vh;
 }
+
+     /* ===== // SERVICE HEADER // ===== */
+
+    .header-svc {
+        background-image: url('images/header-svc.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 750px;
+    }
+
+    .header-svc h1, .header-svc h3 {
+        color: #fff;
+    }
+
+
+    .svc-head-margin {
+        margin-top: 60px;
+    }
+
+
 
 
 
@@ -229,13 +251,24 @@ h3.green-btn {
     height: 600px;
 }
 
-.slider-container {
+.slider-container, .slider-container-svc {
     position: relative;
     display: flex;
     justify-content: center;
     min-height: 100%;
     width: 100%;
 }
+
+.slider-container-svc {
+    min-height: 108px !important;
+}
+
+.container-back-nav {
+    height: 108px;
+    background-color: #253540;
+}
+
+
 .slide-content-container {
      display: flex;
     justify-content: space-between;
@@ -335,11 +368,12 @@ input[type="radio"] {
 
 /* ==== Slider Begin ==== */
 
-.nav-container {
+
+.nav-container, .nav-container-svc {
     position: relative;
     height: 20px;
     width: 80%;
-    top: 60px;
+    top: 40px;
     font-size: 1.125rem;
     font-weight: 700;
     display: flex;
@@ -353,6 +387,16 @@ input[type="radio"] {
     color: #000;
     opacity: 0.3;
 
+}
+
+.nav-container-svc h4, .nav-container-svc label {
+    color: #84b0cd;
+}
+
+.nav-container-svc label.first {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    height: 30px;
 }
 
 .nav-container h4 {
@@ -408,14 +452,14 @@ input[type="radio"] {
 
 /* ===== //LITTLE BOX FOR "OUR SOLUTIONS and BLOG & NEWS// ===== */
 
-.broken-header {
+.broken-header, .broken-header-svc {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
      background: #F1F1F1;
      z-index: 1000 !important;
-     margin-top: -60px;
+     margin-top: -68px;
      height: 69px;
     border-radius: 3px 3px 0px 0px;
     background-color: #f1f1f1;
@@ -427,17 +471,42 @@ input[type="radio"] {
         align-items: center;
 
 }
-.broken-header h1 {
-      color: #345f75;
+
+.broken-header-svc {
+    background-color: #162026 !important;
+}
+
+.broken-header h1, .broken-header-svc h1 {
+     color: #345f75;
      font-size: 1.125rem;
      font-weight: 700;
 }
 
+.broken-header-svc h1 {
+    color: #fff !important;
+}
 
 
 
+.svc-hunt {
+    width: 705px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
 
+.svc-hunt h1, .svc-hunt h4 {
+    color: #000;
+}
 
+.svc-hunt h4 {
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.7;
+}
 
 /* ===== //SECTION 3 -- DEMO SIGNUP & NEWSLETTER BANNERS// ===== */
 
