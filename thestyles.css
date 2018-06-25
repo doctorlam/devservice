@@ -969,6 +969,12 @@ footer a {
         margin-bottom: 20px;
 
     }
+    .image {
+        flex: 1;
+    }
+    .text {
+        flex:3;
+    }
     .slider-section {
         height:750px;
     }
