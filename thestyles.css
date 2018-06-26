@@ -66,7 +66,7 @@ h3.orange, h4.orange {
     margin-bottom: 32px;
 }
 
-h3 {line-height: 50px;}
+h3 {line-height: 2.5rem;}
 
 .img-slider {
     width: 200px;
@@ -158,13 +158,16 @@ min-height: 100vh;
 .navbar-nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between !important;
         width: 100%;
         height: 80px;
 }
 .active {border-bottom: 2px solid #fff;}
 
-.navbar-nav li {margin-left: 1.125rem;}
+.navbar-nav li {
+    margin-left: 2.7rem;
+
+}
 
 .nav-item1 {margin-left: 0 !important;}
 
@@ -197,10 +200,10 @@ min-height: 100vh;
 }
 
 .feature {
-    flex: 3;
+    flex: 2;
 }
 .register {
-    flex: 1;
+    width: 162px;
 }
 
 .green {
@@ -209,14 +212,20 @@ min-height: 100vh;
     text-align: center; 
     font-size: 1.125rem !important; 
     font-weight: bold;
-    width: 347px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.green-box {
+    width: 347px;
+}
 .green a, .green a:visited {
     color: white;
+}
+.green-btn:hover {
+    text-decoration: none;
 }
 h3.green-btn {
     font-size: 1.5rem;
@@ -389,12 +398,12 @@ input[type="radio"] {
     top: 25%;
     left: -100%;
     opacity: 0;
-    transition: all 0.5s ease-in;
-
+    transition: all 0.2s ease-in !important;
 }
 
+
 .img-slider {
-    width: 300px;
+    width: 250px;
 }
 
 #sec-one:checked ~ div.sec-one-slider, 
@@ -456,6 +465,12 @@ input[type="radio"] {
 .broken-header-svc {
     background-color: #162026 !important;
 }
+.svc-head-margin {
+    padding-top: 80px;
+width: 70%;
+justify-content: space-between;
+margin: 0 auto;
+}
 
 .broken-header h1, .broken-header-svc h1 {
      color: #345f75;
@@ -486,7 +501,7 @@ input[type="radio"] {
 .svc-hunt h4 {
     font-style: italic;
     font-weight: 300;
-    opacity: 0.7;
+    opacity: 0.7 !important;
 }
 
 /* ===== //SECTION 3 -- DEMO SIGNUP & NEWSLETTER BANNERS// ===== */
@@ -701,6 +716,7 @@ list-style-type: none;
   margin-right: 16px;
   border-radius: 3px;
     position: relative;
+    overflow-wrap: break-word;
 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.31)), linear-gradient(#50748a, #50748a);
 } 
 
@@ -903,13 +919,15 @@ footer a {
     height: 244px;
     border-radius: 244px;
 }
-
+.feature-header-image {
+    width: 200px;
+}
 .header-svc {
-    background-image: url('images/header-svc.png');
+    background-image: url('http://pearlsolutions.staging.wpengine.com/wp-content/uploads/2018/06/header-1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 750px;
+    height: 510px;
 }
 
 .header-svc h1, .header-svc h3 {
@@ -921,10 +939,6 @@ footer a {
 }
 
 
-.svc-head-margin {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 .broken-header-svc h1 {
     text-transform: uppercase;
@@ -938,7 +952,7 @@ footer a {
     /* ==== // FEATURE SECTION // ==== */
 
 .feature-top-section {
-    min-height: 600px;
+    min-height: 670px;
 }
 
 .feature-nav {
@@ -976,7 +990,7 @@ footer a {
   }
 
   .feature-text {
-    width: 42%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -988,15 +1002,21 @@ footer a {
   }
 
   .feature-text h1 {
-    color: #000 !important;
+    color: black !important;
     font-weight: 700;
     margin-top: 125px;
+    opacity: 0.7 !important;
   }
 
   .feature-text h4 {
     font-style: italic;
     font-weight: 300;
     margin-top: 30px;
+    color: black;
+    font-size: 1.5rem;
+    opacity: 0.7 !important;
+      line-height: 2.2rem;
+
   }
 
     /* ==== // HOW IT WORKS SECTION // ==== */  
@@ -1007,15 +1027,13 @@ footer a {
 }
 
 .how-it-works-section .flex-container-centered, .targets-section .flex-container-centered {
-    width: 60%;
+    width: 65%;
     flex-wrap: wrap;
     margin: 0 auto;
-    min-height: 700px;
-
+    padding-bottom: 30px;
 }
 
 .content-box {
-    min-height: 150px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -1038,7 +1056,10 @@ footer a {
     align-items: center;
 
 }
-
+.text-box p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
 .left-align-box {
     display:flex;
     align-items: center;
@@ -1053,25 +1074,26 @@ footer a {
 
 .targets-section {
     background-color: #f1f1f1;
-    min-height: 900px;
+    min-height: 1100px;
 }
 
-.targets-section .flex-container-centered .content-box {
-    height: 230px;
-
-}
-
-.targets-section .flex-container-centered .content-box .text-box h2, .targets-section .flex-container-centered .content-box .text-box h5 {
+.targets-section .flex-container-centered .co0ntent-box .text-box h2, .targets-section .flex-container-centered .content-box .text-box p {
     color: #000 !important;
-    opacity: 0.7;
+    opacity: 0.7 !important;
 }
 
 .targets-section .flex-container-centered .content-box .text-box h2 {
     font-weight: 700;
+    color: black;
+    opacity: 0.7 !important;
+
 }
 
-.targets-section .flex-container-centered .content-box .text-box h5 {
+.targets-section .flex-container-centered .content-box .text-box p {
     font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
 }
 
 .targets-section .flex-container-centered .content-box .text-box .left-align-box {
