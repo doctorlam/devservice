@@ -1222,6 +1222,25 @@ footer a {
 
     /* ===== // MARKETING CAMPAIGNS SECTION // ===== */
 
+.mkt-content {
+    margin: 0 auto;
+    text-align: center;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mkt-content h2 {
+    line-height: 70px;
+}
+
+.mkt-content h5 {
+
+}
+
 .text-box-mkt-left {
     background-color: #324957;
     
@@ -1234,12 +1253,15 @@ footer a {
 .text-box-mkt-full {
     background-color: #50748a;
     width: 100%;
-    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .text-box-mkt-left, .text-box-mkt-right {
     width: 50%;
+    min-height: 500px;
 
 }
 
@@ -1252,30 +1274,25 @@ footer a {
     text-align: center;
 }
 
-.text-box-mkt-full {
-    min-height: 600px;
-}
-
 .text-box-mkt-left .circle, .text-box-mkt-right .circle, .text-box-mkt-full .circle {
     width: 176px;
     height: 176px;
-    margin-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
 }
 
-.campaign-section {
+.campaigns-section {
     background-color: #50748a;
     min-height: 400px;
 }
 
-.campaign-section .flex-container-centered, .channels-section .flex-container-centered {
+.campaigns-section .flex-container-centered, .channels-section .flex-container-centered {
     width: 100%;
     flex-wrap: nowrap;
     margin: 0 auto;
     padding-bottom: 30px;
 }
-
-
-
 
     /* ===== // MARKETING CHANNELS SECTION // ===== */
 
