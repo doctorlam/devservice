@@ -1465,10 +1465,11 @@ footer a {
   }
 
      /* ===== //ENGAGEMENT ALERTS SECTION // ===== */
-.alerts-container {
+.alerts-container, .take-action-container {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 20px;
+
 }
   .alerts-section {
     background-color: #50748a;
@@ -1492,13 +1493,19 @@ footer a {
 
   }
 
-  .alerts-section .content-left {
+  .alerts-section .content-left, .take-action-section .content-left {
     width: 50%;
-    margin-right: 44px;
+    margin-right: 0px;
+    margin-top: 40px;
+
 
   }
 
-  .alerts-section .content-right {
+  .content-left-bottom, .content-right-bottom {
+    margin-bottom: 80px;
+  }
+
+  .alerts-section .content-right, .take-action-section .content-right {
     width: 50%;
   }
 
@@ -1507,7 +1514,80 @@ footer a {
     color: #fff !important;
   }
 
+      /* ===== //ENGAGEMENT TAKE ACTION SECTION // ===== */
 
+  .take-action-container, .accountability-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .take-action-section {
+    background-color: #f1f1f1;
+    margin-top: 0px;
+
+
+  }
+
+  .take-action-section .intro {
+    padding-top: 40px;
+    color: #474747;
+    font-size: 1.9rem;
+    font-weight: 300;
+    width: 50%;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .take-action-section .broken-header {
+    background-color: #f1f1f1;
+     font-size: 1.125rem;
+     font-weight: 700;
+  }
+
+  .take-action-section h1 {
+    color: #474747 !important;
+  }
+
+        /* ===== //ENGAGEMENT ACCOUNTABILITY SECTION // ===== */
+
+  .accountability-section {
+    background-color: #324957;
+    height: 400px;
+
+  }
+
+  .accountability-section .content-left {
+    width: 35%;
+    background-color: transparent;
+    height: 400px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .accountability-section .content-right {
+    width: 65%;
+    height: 400px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #50748a;
+  }
+
+  .accountability-section p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .accountability-container .img-box {
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+  }
 
 /*-- RESPONSIVE STYLES --*/
 
