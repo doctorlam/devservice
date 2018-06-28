@@ -1,4 +1,4 @@
-/*!
+/*! 
 Theme Name: Pearl 360 New Site
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -442,7 +442,7 @@ input[type="radio"] {
 
 /* ===== //LITTLE BOX FOR "OUR SOLUTIONS and BLOG & NEWS// ===== */
 
-.broken-header, .broken-header-svc, .broken-header-mkt {
+.broken-header, .broken-header-svc, .broken-header-mkt, .broken-header-eng {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -478,7 +478,7 @@ margin: 0 auto;
      font-weight: 700;
 }
 
-.broken-header-svc h1, .broken-header-mkt h1 {
+.broken-header-svc h1, .broken-header-mkt h1, .broken-header-eng h1 {
     color: #fff !important;
 }
 
@@ -940,7 +940,7 @@ footer a {
 
 
 
-.broken-header-svc h1, .broken-header-mkt h1 {
+.broken-header-svc h1, .broken-header-mkt h1, .broken-header-eng h1 {
     text-transform: uppercase;
 }
 
@@ -1368,6 +1368,11 @@ footer a {
 
     /* ===== // MARKETING AUTOMATION SECTION // ===== */
 
+.automation-img {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 .automation-section {
     background-color: #50748a;
     height: 800px;
@@ -1399,6 +1404,105 @@ footer a {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+/* ===== // ENGAGEMENT SECTION // ===== */ 
+
+    /* ===== //ENGAGEMENT HEADER SECTION // ===== */
+
+.header-engage {
+    background-image: url('images/header-mkt.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 510px;
+}
+
+.header-engage-img {
+    width: 195px;
+}
+
+.header-engage h1, .header-engage h3 {
+    color: #fff;
+}
+
+.header-engage h3 {
+    font-size: 1.5rem;
+}
+
+    /* ===== //ENGAGEMENT FEATURES NAV SECTION // ===== */
+
+.feature-nav-eng {
+    min-height: 100px;
+    background-color: #253540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-nav-eng ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: #84b0cd;
+    font-size: 1.1rem;
+
+  }
+
+  .feature-nav-eng ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .feature-nav-eng ul li.arrow {
+    margin-top: 10px;
+  }
+
+  .feature-nav-eng ul li.third {
+    color: #fff !important;
+    border-bottom: 4px solid #fff;
+    margin-top: 3px;
+  }
+
+     /* ===== //ENGAGEMENT ALERTS SECTION // ===== */
+
+  .alerts-section {
+    background-color: #50748a;
+
+  }
+
+  .broken-header-eng {
+    background-color: #324957;
+     font-size: 1.125rem;
+     font-weight: 700;
+  }
+
+  .actions-section .flex-container-centered {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .actions-section .flex-container-centered .content-left .img-box {
+    background-color: #22b3d5 !important;
+    width: 413px;
+
+  }
+
+  .actions-section .flex-container-centered .content-left {
+    width: 413px;
+    margin-right: 44px;
+
+  }
+
+  .actions-section .flex-container-centered .content-right {
+    width: 343px;
+  }
+
+  .actions-section .flex-container-centered .content-right h4, 
+  .actions-section .flex-container-centered .content-right p {
+    color: #fff !important;
+  }
 
 
 
