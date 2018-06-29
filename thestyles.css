@@ -1589,6 +1589,296 @@ footer a {
     padding: 0;
   }
 
+/* ===== //VEHICLE ACQUISITION SECTION // ===== */
+
+        /* ===== //VA INTRO SECTION // ===== */
+
+.acq-intro {
+    width: 40%;
+}
+
+.feature-nav-acq {
+    min-height: 100px;
+    background-color: #253540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-nav-acq ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: #84b0cd;
+    font-size: 1.1rem;
+
+  }
+
+  .feature-nav-acq ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .feature-nav-acq ul li.arrow {
+    margin-top: 10px;
+  }
+
+  .feature-nav-acq ul li.fourth {
+    color: #fff !important;
+    border-bottom: 4px solid #fff;
+    margin-top: 3px;
+  }
+
+.predictive-analysis, .consumer-experience, .benefits {
+    background-color: #50748a;
+    height: 550px;
+
+}
+
+.picture-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.email-acq, .direct-acq {
+    width: 200px;
+    height: 200px;
+    background-image: url("images/email-acq.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0px 5px 10px 5px;
+    text-align: center;
+}
+
+.email-acq {
+    background-image: url("images/email-acq.png");
+}
+
+.direct-acq {
+    background-image: url("images/direct-acq.png");
+}
+
+.digital-acq {
+    width: 410px;
+    height: 200px;
+    background-image: url("images/digital-acq.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+.email-acq h1, .direct-acq h1, .digital-acq h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+.email-acq, .direct-acq, .digital-acq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acquisition .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.predictive-analysis .broken-header, .consumer-experience .broken-header {
+    background-color: #324957;
+    width: 15%;
+}
+
+.benefits .broken-header {
+    width: 10%;
+    background-color: #162026;
+}
+
+.automated-marketing {
+    background-color: #f1f1f1;
+}
+
+.automated-marketing .broken-header {
+    background-color: #f1f1f1;
+    width: 25%;
+}
+
+.real-time .broken-header {
+    background-color: #f1f1f1;
+    width: 15%;
+}
+
+.automated-marketing .broken-header h1, .real-time .broken-header h1 {
+    color: #324957;
+}
+
+.automated-marketing p {
+    color: #474747;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+}
+
+.acquisition .broken-header h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.acquisition .content {
+    width: 40%;
+    height: 200px;
+    text-align: center;
+
+}
+
+.predictive-analysis h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.predictive-analysis p {
+    color: #fff;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+.predictive-analysis {
+
+}
+
+.automated-marketing, .real-time {
+    background-color: #f1f1f1;
+    height: 800px;
+
+}
+
+.consumer-experience {
+    height: 700px;
+}
+
+.consumer-experience .content {
+    width: 50%;
+    height: 700px;
+}
+
+.consumer-experience .picture-row {
+    height: 300px;
+}
+
+.consumer-experience .left-content, .consumer-experience .right-content {
+    color: #fff;
+}
+
+.consumer-experience .left-content {
+    text-align: right;
+}
+
+.consumer-experience .right-content {
+    text-align: left;
+}
+
+.img-slider-mobile {
+    width: 134px;
+}
+
+.real-time {
+
+}
+
+.real-time .content {
+    width: 50%;
+}
+
+.real-time p {
+    font-size: 2.2rem;
+    color: #474747;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.benefits {
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: ;
+}
+
+.benefits-container {
+    width: 100%;
+    height: 800px;
+    background-color: ##50748a;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.benefits .left-box, .benefits .right-box{
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box .content, .right-box .content p, .benefits-bottom p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-top: 30px;
+
+}
+
+.img-slider-benefits {
+    width: 110px;
+}
+
+.img-slider-benefits2 {
+    width: 170px;
+}
+
+
+.benefits .picture-row {
+    width: 100%;
+}
+
+.benefits .left-box {
+    background-color: #324957;
+}
+
+.benefits .right-box {
+    background-color: #415e70;
+}
+
+.benefits .desktop-check {
+    width: 150px;
+    height: 150px;
+}
+
+.benefits-bottom {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+
+
 /*-- RESPONSIVE STYLES --*/
 
 
